@@ -5,17 +5,14 @@ export const ConditionalRendering = () => {
   const buttons = array.map((item) => {
     return <button>{item}</button>;
   });
-  const slicedbuttons = array.slice(0, 3).map((Element) => {
-    return <button>{Element}</button>;
-  });
-
-  return (
+  let slicedbuttons;
+  slicedbuttons = array.length === 7 ? array.map((item)=>{
+    return <button>{item}</button>
+  }) : [<button>NA</button>]
+return (
     <div>
       <div>{buttons}</div>
-
-      <div>
-        (if ({array.length === 6}) {{ slicedbuttons }})
-      </div>
+      <div>{slicedbuttons}</div>
     </div>
   );
 };
