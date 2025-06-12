@@ -1,4 +1,5 @@
 import "./App.css";
+import { To_Do_List } from "./Components/To_Do_List";
 
 import { UseState } from "./Components/UseState";
 import { UseState2 } from "./Components/UseState2";
@@ -12,6 +13,7 @@ function App() {
       <UseState2 />
       <UseState3 />
       <UseState4 />
+      <To_Do_List/>
     </>
   );
 }
