@@ -7,17 +7,10 @@ export const ConditionalRendering = () => {
     return <button>{item}</button>;
   });
   let slicedbuttons;
-  slicedbuttons =
-    array.length && array2.length != 0
-      ? array.map((item) => {
-          return (
-            <button>{item}</button> &&
-            array2.map((item2) => {
-            return <button>{item2}</button>;
-            })
-          );
-        })
-      : [<h1>Not Applicable</h1>]
+  slicedbuttons = array.length === array2.length && array.map((item)=>{
+    return <button>{item}</button>
+  })
+    
   return (
     <div>
       <div>{buttons}</div>
