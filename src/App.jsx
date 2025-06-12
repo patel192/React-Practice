@@ -1,4 +1,5 @@
 import "./App.css";
+import { ColorChanger } from "./Components/ColorChanger";
 import { To_Do_List } from "./Components/To_Do_List";
 
 import { UseState } from "./Components/UseState";
@@ -14,6 +15,7 @@ function App() {
       <UseState3 />
       <UseState4 />
       <To_Do_List/>
+      <ColorChanger/>
     </>
   );
 }
