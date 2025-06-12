@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-export const ConditionalRendering = () => {   
+export const UseState = () => {   
   const [count, setCount] = useState(0)
   return (
     <div>

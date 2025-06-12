@@ -1,15 +1,15 @@
+import "./App.css";
 
-import './App.css'
-import { ConditionalRendering } from './Components/ConditionalRendering'
+import { UseState } from "./Components/UseState";
+import { UseState2 } from "./Components/UseState2";
 
 function App() {
-  
-
   return (
     <>
-     <ConditionalRendering/>
+      <UseState />
+      <UseState2 />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
