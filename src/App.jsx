@@ -1,5 +1,6 @@
 import "./App.css";
 import { ColorChanger } from "./Components/ColorChanger";
+import { Drag_Drop } from "./Components/Drag_Drop";
 import { Search_component } from "./Components/Search_component";
 import { To_Do_List } from "./Components/To_Do_List";
 
@@ -18,6 +19,7 @@ function App() {
       <To_Do_List/>
       <ColorChanger/>
       <Search_component/>
+      <Drag_Drop/>
     </>
   );
 }
