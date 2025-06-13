@@ -1,16 +1,17 @@
 import React from "react";
 import { useState } from "react";
 export const ColorChanger = () => {
-  const DataHandler = (data) =>{
-    console.log(data)
+  const [Color, setColor] = useState('');
+  const Handlechange =(event)=>{ 
+    setColor(event.target.value)
+    console.log(setColor)
+
   }
-  const [color, setcolor] = useState('')
   return (
     <div>
-      <h1>Please Select Color For Me</h1>
-      <form action="" onSubmit={DataHandler}>
-        <select name="" id="">
-          <option value="red">RED</option>
+      <h1 style={{backgroundColor:Color}}>Please Select Color For Me</h1>
+        <select name="" id="" onChange={Handlechange}>
+          <option value="red" selected>RED</option>
           <option value="green">GREEN</option>
           <option value="blue">BLUE</option>
           <option value="white">WHITE</option>
@@ -18,8 +19,6 @@ export const ColorChanger = () => {
           <option value="black">BLACK</option>
           <option value="orange">ORANGE</option>
         </select>
-        <input type="submit" value="Change The Color" />
-      </form>
     </div>
   );
 };
