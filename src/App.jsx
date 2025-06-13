@@ -1,13 +1,14 @@
 import "./App.css";
-import { ColorChanger } from "./Components/ColorChanger";
-import { Drag_Drop } from "./Components/Drag_Drop";
-import { Search_component } from "./Components/Search_component";
-import { To_Do_List } from "./Components/To_Do_List";
+import { Counter } from "./Components/useEffect/Counter";
+import { ColorChanger } from "./Components/useState/ColorChanger";
+import { Drag_Drop } from "./Components/useState/Drag_Drop";
+import { Search_component } from "./Components/useState/Search_component";
+import { To_Do_List } from "./Components/useState/To_Do_List";
 
-import { UseState } from "./Components/UseState";
-import { UseState2 } from "./Components/UseState2";
-import { UseState3 } from "./Components/UseState3";
-import { UseState4 } from "./Components/UseState4";
+import { UseState } from "./Components/useState/UseState";
+import { UseState2 } from "./Components/useState/UseState2";
+import { UseState3 } from "./Components/useState/UseState3";
+import { UseState4 } from "./Components/useState/UseState4";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <ColorChanger/>
       <Search_component/>
       <Drag_Drop/>
+      <Counter/>
     </>
   );
 }
