@@ -1,4 +1,5 @@
 import "./App.css";
+import { CountDown } from "./Components/useEffect/CountDown";
 import { Counter } from "./Components/useEffect/Counter";
 import { ColorChanger } from "./Components/useState/ColorChanger";
 import { Drag_Drop } from "./Components/useState/Drag_Drop";
@@ -22,6 +23,7 @@ function App() {
       <Search_component/>
       <Drag_Drop/>
       <Counter/>
+      <CountDown/>
     </>
   );
 }
