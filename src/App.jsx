@@ -1,5 +1,6 @@
 import "./App.css";
 import { ColorChanger } from "./Components/ColorChanger";
+import { Search_component } from "./Components/Search_component";
 import { To_Do_List } from "./Components/To_Do_List";
 
 import { UseState } from "./Components/UseState";
@@ -16,6 +17,7 @@ function App() {
       <UseState4 />
       <To_Do_List/>
       <ColorChanger/>
+      <Search_component/>
     </>
   );
 }
