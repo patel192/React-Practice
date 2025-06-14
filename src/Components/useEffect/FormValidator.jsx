@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"; // Keep useEffect if you use it for actual side-effects
+import React, { useEffect } from "react";
 import { useForm } from "react-hook-form";
 
 export const FormValidator = () => {
@@ -6,28 +6,24 @@ export const FormValidator = () => {
     register,
     handleSubmit,
     formState: { errors, isSubmitting, isDirty, isValid },
-    watch 
+    watch
   } = useForm();
 
-  // Watch for changes in all form values
   const formValues = watch(); 
 
   const SubmiHandler = (data) => {
     console.log("Form Submitted:", data);
-    // In a real app, you'd send this data to an API, etc.
   };
 
-  // Example useEffect for a side effect: Logging errors when they change
   useEffect(() => {
     if (Object.keys(errors).length > 0) {
       console.log("Validation Errors:", errors);
     }
-  }, [errors]); // Dependency array: runs when 'errors' object changes
+  }, [errors]);
 
-  // Another example: Logging form values as they are typed (for debugging)
   useEffect(() => {
     console.log("Current form values:", formValues);
-  }, [formValues]); // Dependency array: runs whenever form values change
+  }, [formValues]);
 
 
   return (
@@ -37,7 +33,6 @@ export const FormValidator = () => {
           Login Form 🔐
         </h1>
         <form onSubmit={handleSubmit(SubmiHandler)} className="space-y-6">
-          {/* Email Input Field */}
           <div>
             <label htmlFor="email" className="block text-lg font-medium text-gray-700 mb-2">
               Email
@@ -65,7 +60,6 @@ export const FormValidator = () => {
             )}
           </div>
 
-          {/* Password Input Field */}
           <div>
             <label htmlFor="password" className="block text-lg font-medium text-gray-700 mb-2">
               Password
@@ -101,11 +95,10 @@ export const FormValidator = () => {
             )}
           </div>
 
-          {/* Submit Button */}
           <button
             type="submit"
             className="w-full bg-blue-600 text-white font-bold text-lg py-3 rounded-lg shadow-md hover:bg-blue-700 transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-blue-300 active:bg-blue-800"
-            disabled={isSubmitting} // Disable button during submission
+            disabled={isSubmitting}
           >
             {isSubmitting ? 'Submitting...' : 'Submit'}
           </button>
