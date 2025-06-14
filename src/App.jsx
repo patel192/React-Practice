@@ -1,5 +1,6 @@
 import "./App.css";
 import { Props1 } from "./Components/props/Props1";
+import { Props2 } from "./Components/props/Props2";
 import { UseContext1 } from "./Components/useContext/useContext1";
 import { CountDown } from "./Components/useEffect/CountDown";
 import { Counter } from "./Components/useEffect/Counter";
@@ -15,7 +16,7 @@ import { UseState3 } from "./Components/useState/UseState3";
 import { UseState4 } from "./Components/useState/UseState4";
 
 function App() {
-
+const Array = ["For","While","Do-while","If-else"]
   return (
     <>
       <UseState />
@@ -31,6 +32,7 @@ function App() {
       <FormValidator />
       <UseContext1 />
       <Props1 make="Honda" color="red" year="2003" />
+      <Props2 dataArray={Array}/>
     </>
   );
 }
