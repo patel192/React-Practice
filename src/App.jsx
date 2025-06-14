@@ -1,4 +1,5 @@
 import "./App.css";
+import { UseContext1 } from "./Components/useContext/useContext1";
 import { CountDown } from "./Components/useEffect/CountDown";
 import { Counter } from "./Components/useEffect/Counter";
 import { FormValidator } from "./Components/useEffect/FormValidator";
@@ -19,13 +20,14 @@ function App() {
       <UseState2 />
       <UseState3 />
       <UseState4 />
-      <To_Do_List/>
-      <ColorChanger/>
-      <Search_component/>
-      <Drag_Drop/>
-      <Counter/>
-      <CountDown/>
-      <FormValidator/>
+      <To_Do_List />
+      <ColorChanger />
+      <Search_component />
+      <Drag_Drop />
+      <Counter />
+      <CountDown />
+      <FormValidator />
+      <UseContext1 />
     </>
   );
 }
