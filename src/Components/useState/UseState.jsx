@@ -1,13 +1,13 @@
 import React from "react";
 import { useState } from "react";
 
-export const UseState = () => {
+export const UseState = (props) => {
   const [count, setCount] = useState(0);
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
       <h1 className="text-5xl font-extrabold text-blue-700 mb-6 tracking-wide">
-        Counter <span role="img" aria-label="watch">⌚</span>
+        {props.year}Counter <span role="img" aria-label="watch">⌚</span>
       </h1>
       <div className="text-8xl font-bold text-gray-800 mb-10">
         {count}

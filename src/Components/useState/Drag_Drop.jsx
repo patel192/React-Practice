@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 
 export const Drag_Drop = () => {
-  const initialItems = ['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5'];
+  const initialItems = ['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5']
   const [items, setItems] = useState(initialItems);
   // draggingIndex will store the index of the item currently being dragged from its original position
   const [draggingIndex, setDraggingIndex] = useState(null); 
