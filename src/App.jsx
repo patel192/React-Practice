@@ -1,6 +1,7 @@
 import "./App.css";
 import { CountDown } from "./Components/useEffect/CountDown";
 import { Counter } from "./Components/useEffect/Counter";
+import { FormValidator } from "./Components/useEffect/FormValidator";
 import { ColorChanger } from "./Components/useState/ColorChanger";
 import { Drag_Drop } from "./Components/useState/Drag_Drop";
 import { Search_component } from "./Components/useState/Search_component";
@@ -24,6 +25,7 @@ function App() {
       <Drag_Drop/>
       <Counter/>
       <CountDown/>
+      <FormValidator/>
     </>
   );
 }
