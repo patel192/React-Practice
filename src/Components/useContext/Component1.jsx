@@ -5,7 +5,7 @@ export const Component1 = () => {
     const user = "Muhammad"
   return (
     <div>Component1
-        <Component2 user = {user}/>
+        <Component2 User = {user}/>
     </div>
   )
 }
