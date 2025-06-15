@@ -1,11 +1,11 @@
-import React from 'react'
-import { UseContext1 } from './useContext1'
+import React from "react";
+import { UseContext1 } from "./useContext1";
 
-export const Component2 = ({User}) => {
+export const Component2 = () => {
   return (
-    <div>Component2
-        <h1>Hello {User}</h1>
-        <UseContext1 user={User}/>
+    <div>
+      Component2
+      <UseContext1 />
     </div>
-  )
-}
+  );
+};
