@@ -1,4 +1,5 @@
 import "./App.css";
+import { Cars } from "./Components/props/Cars";
 import { Props1 } from "./Components/props/Props1";
 import { Props2 } from "./Components/props/Props2";
 import { UseContext1 } from "./Components/useContext/useContext1";
@@ -33,6 +34,7 @@ const Array = ["For","While","Do-while","If-else"]
       <UseContext1 />
       <Props1 make="Honda" color="red" year="2003" />
       <Props2 dataArray={Array}/>
+      <Cars/>
     </>
   );
 }
