@@ -2,9 +2,10 @@
 import React from "react";
 import { Component2 } from "./Component2";
 import { UserContext } from "./Usercontext"; //
-
+import { ObjectContext } from "./Usercontext";
 export const Component1 = () => {
   const user = "Muhammad";
+  const list = ["A", "B", "C", "D"];
 
   return (
     <div style={{ border: "2px solid blue", padding: "10px", margin: "10px" }}>
@@ -14,7 +15,9 @@ export const Component1 = () => {
       </p>
 
       <UserContext.Provider value={user}>
-        <Component2 />
+        <ObjectContext.Provider value={list}>
+          <Component2 />
+        </ObjectContext.Provider>
       </UserContext.Provider>
     </div>
   );
