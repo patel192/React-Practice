@@ -2,6 +2,7 @@ import "./App.css";
 import { Cars } from "./Components/props/Cars";
 import { Props1 } from "./Components/props/Props1";
 import { Props2 } from "./Components/props/Props2";
+import { UseCallback1 } from "./Components/useCallback/UseCallback1";
 import { Component1 } from "./Components/useContext/Component1";
 import { UseContext1 } from "./Components/useContext/useContext1";
 import { CountDown } from "./Components/useEffect/CountDown";
@@ -36,6 +37,7 @@ const Array = ["For","While","Do-while","If-else"]
       <Props1 make="Honda" color="red" year="2003" />
       <Props2 dataArray={Array}/>
       <Cars/>
+      <UseCallback1/>
     </>
   );
 }
