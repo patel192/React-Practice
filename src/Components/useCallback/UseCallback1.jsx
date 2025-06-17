@@ -1,10 +1,7 @@
 import React, { useState, useCallback } from 'react';
 
-// ChildComponent: This component receives an onClick prop
-// React.memo is used here to prevent unnecessary re-renders of ChildComponent
-// unless its props (like onClick) actually change.
 const ChildComponent = React.memo(({ onClick }) => {
-  console.log('ChildComponent rendered'); // To see when it re-renders
+  console.log('ChildComponent rendered');
   return (
     <div className="mt-4 p-4 border border-gray-300 rounded-md bg-gray-50 shadow-sm">
       <h2 className="text-lg font-semibold text-gray-700 mb-2">Child Component</h2>
@@ -18,20 +15,13 @@ const ChildComponent = React.memo(({ onClick }) => {
   );
 });
 
-// UseCallback1 Component: Demonstrates useCallback with ChildComponent
 export function UseCallback1() {
   const [count, setCount] = useState(0);
 
-  // Using useCallback to memoize the handleclick function.
-  // This function will only be recreated if its dependencies ([]) change.
-  // In this case, since there are no dependencies, it's created only once.
   const handleClick = useCallback(() => {
-    console.log("Child button clicked!"); // Replaced alert with console.log
-    // You could also update a state here to display a message on screen
-    // For example: setLastAction("Button clicked at " + new Date().toLocaleTimeString());
-  }, []); // Empty dependency array means the function is stable across renders
+    console.log("Child button clicked!");
+  }, []);
 
-  // State to hold a message for display, replacing alert
   const [lastAction, setLastAction] = useState("");
 
   const handleIncrement = () => {
@@ -46,7 +36,6 @@ export function UseCallback1() {
 
         <p className="text-2xl font-medium text-blue-600 mb-4">Count: {count}</p>
 
-        {/* ChildComponent receives the memoized handleClick */}
         <ChildComponent onClick={handleClick} />
 
         <button
@@ -70,4 +59,4 @@ export function UseCallback1() {
   );
 }
 
-export default UseCallback1; // Export as default
+export default UseCallback1;
