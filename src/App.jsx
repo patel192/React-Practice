@@ -9,6 +9,7 @@ import { UseContext1 } from "./Components/useContext/useContext1";
 import { CountDown } from "./Components/useEffect/CountDown";
 import { Counter } from "./Components/useEffect/Counter";
 import { FormValidator } from "./Components/useEffect/FormValidator";
+import { UseMemo1 } from "./Components/useMemo/UseMemo1";
 import { ColorChanger } from "./Components/useState/ColorChanger";
 import { Drag_Drop } from "./Components/useState/Drag_Drop";
 import { Search_component } from "./Components/useState/Search_component";
@@ -23,7 +24,7 @@ function App() {
 const Array = ["For","While","Do-while","If-else"]
   return (
     <>
-      <Component1/>
+     <UseMemo1/>
     </>
   );
 }
