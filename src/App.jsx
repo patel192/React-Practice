@@ -23,23 +23,7 @@ function App() {
 const Array = ["For","While","Do-while","If-else"]
   return (
     <>
-      <UseState />
-      <UseState2 />
-      <UseState3 />
-      <UseState4 />
-      <To_Do_List />
-      <ColorChanger />
-      <Search_component />
-      <Drag_Drop />
-      <Counter />
-      <CountDown />
-      <FormValidator />
       <Component1/>
-      <Props1 make="Honda" color="red" year="2003" />
-      <Props2 dataArray={Array}/>
-      <Cars/>
-      <UseCallback1/>
-      <UseCallbackFilterExample/>
     </>
   );
 }
